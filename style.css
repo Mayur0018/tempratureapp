@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: #07111D;
+}
+
+:root{
+    --text-colorr:#fff;  
+}
+.card{
+    display: flex;
+    justify-content: center;   
+}
+.search{
+    position: relative;
+    top: 150px;
+    background: linear-gradient(135deg,#00feba,#5b548a);
+    height: 60vh;
+    width: 26vw;
+    border-radius: 15px;
+    box-shadow: 0px 0px 16px #00feba;
+}
+.search input{
+    width: 16rem;
+    padding: 12px;
+    margin: 30px 20px 0px 25px;
+    border: 2px solid var(--text-colorr);
+    border-radius: 50px;
+    transition: 0.5s;   
+}
+.search input:hover{
+    box-shadow: 0px 0px 15px var(--text-colorr);
+}
+.search button{
+    position: relative;
+    top: 0px;
+    left: -15px;
+    text-align: center;
+    background-color: var(--text-colorr);
+    border-radius: 50%;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.search button i{
+    padding: 7px;
+    font-size: 12px;
+}
+.search button:hover{
+    box-shadow: 0px 0px 15px var(--text-colorr);
+}
+.weather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 220px;
+}
+.weather img{
+    width: 8vw;
+    margin-left: 115px;
+}
+.details{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 50px;
+}
+.temp{
+    margin-left: 115px;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--text-colorr);
+}
+.City{
+    font-size: 1.9rem;
+    margin-top: 8px;
+    margin-left: 135px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    color: var(--text-colorr);
+}
+.details img{
+    width: 40px;
+    margin: 0px 30px 0px 50px;
+}
+.humadity{
+    margin-left: -28px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--text-colorr);
+}
+.wind{
+    margin-left: -20px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--text-colorr);
+}
+
+.Speed{
+    margin: 2px 0px 0px -25px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--text-colorr);
+}
+.huumadity1{
+    margin: 2px 0px 0px -25px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--text-colorr);
+}
+.weather{
+    display: none;
+}
+.error{
+    color: #fff;
+    position: absolute;
+    top : 225px;
+    font-size: 12px;
+    color: red;
+    font-weight: 500;
+    display: none;
+}
+
+
